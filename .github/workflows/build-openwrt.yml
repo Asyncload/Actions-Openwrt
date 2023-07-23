@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/x-wrt/x-wrt
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: '21.02.7'
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -166,7 +166,7 @@ jobs:
         files: ${{ env.FIRMWARE }}/*
 
     - name: Delete workflow runs
-      uses: GitRML/delete-workflow-runs@main
+      uses: FunctionXJB/delete-workflow-runs@main
       with:
         retain_days: 1
         keep_minimum_runs: 3
