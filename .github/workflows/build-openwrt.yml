@@ -40,7 +40,7 @@ jobs:
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
 
-    - name: 拉取OpenWRT仓库
+    - name: 拉取OpenWtr仓库
       working-directory: /workdir
       run: |
         df -hT $PWD
