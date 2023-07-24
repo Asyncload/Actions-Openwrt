@@ -5,8 +5,6 @@ name: Build R4A OpenWrt
 on:
   workflow_dispatch:
     
-      
-
 env:
   REPO_URL: https://github.com/x-wrt/x-wrt
   REPO_BRANCH: '21.10'
