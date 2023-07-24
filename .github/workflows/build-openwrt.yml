@@ -109,8 +109,7 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        path: openwrt/bin
-        
+        path: openwrt/bin        
 
     - name: 清理ActionsRuns旧数据
       uses: FunctionXJB/delete-workflow-runs@main
