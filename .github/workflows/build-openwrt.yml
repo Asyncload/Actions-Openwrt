@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - name: 检查出仓库数据
+    - name: 检出仓库数据
       uses: actions/checkout@main
 
     - name: 初始化编译环境
