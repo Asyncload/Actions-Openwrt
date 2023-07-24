@@ -140,3 +140,5 @@ cat >> ./target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-gigabit.dtsi << EOF
 	};
 };
 EOF
+sed -i 's/#include "mt7621_xiaomi_mi-router-4a-3g-v2.dtsi"/#include "mt7621_xiaomi_mi-router-4a-gigabit.dtsi"/g' ./target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-gigabit.dts
+sed -i '/define Device\/xiaomi_mi-router-4a-gigabit/{:a;n;s/IMAGE_SIZE := 14848k/IMAGE_SIZE := 16064k/g;/TARGET_DEVICES += xiaomi_mi-router-4a-gigabit/!ba}' ./target/linux/ramips/image/mt7621.mk
