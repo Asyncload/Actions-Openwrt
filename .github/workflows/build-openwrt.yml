@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - name: 检出仓库数据
+    - name: 检查出仓库数据
       uses: actions/checkout@main
 
     - name: 初始化编译环境
@@ -40,7 +40,7 @@ jobs:
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
 
-    - name: 拉取OpenWtr仓库
+    - name: 拉取OpenWrt仓库
       working-directory: /workdir
       run: |
         df -hT $PWD
